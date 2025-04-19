@@ -1,45 +1,21 @@
-//Rushang Panchal
-//8963159
-
 src > components > Footer.jsx
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../css/Navbar.css';
+import React from 'react';
+import '../css/Footer.css';
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+const Footer = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <Link to="/" className="logo">Portfolio</Link>
-        
-        {/* Hamburger Menu Icon */}
-        <button 
-          className={hamburger ${isMenuOpen ? 'active' : ''}} 
-          onClick={toggleMenu}
-          aria-label="Menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        {/* Navigation Menu */}
-        <div className={nav-menu ${isMenuOpen ? 'active' : ''}}>
-          <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
-          <Link to="/about" className="nav-link" onClick={() => setIsMenuOpen(false)}>About</Link>
-          <Link to="/projects" className="nav-link" onClick={() => setIsMenuOpen(false)}>Projects</Link>
-          <Link to="/contact" className="nav-link" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+    <footer className="footer">
+      <div className="footer-content">
+        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
+        <div className="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
       </div>
-    </nav>
+    </footer>
   );
 };
 
-export default Navbar;
+export default Footer;
