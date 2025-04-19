@@ -1,7 +1,6 @@
-//Rushang Panchal
-//8963159
+// Rushang Panchal
+// 8963159
 
-src > pages > Contact.jsx
 
 import React from 'react';
 import '../css/Contact.css';

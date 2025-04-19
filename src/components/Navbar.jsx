@@ -1,4 +1,5 @@
-src > components > Footer.jsx
+/* Rushang Panchal */
+/* 8963159 */
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
