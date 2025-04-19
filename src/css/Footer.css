@@ -1,24 +1,56 @@
-//Rushang Panchal 
-//8963159
+/* Rushang Panchal  */
+/* 8963159 */
 
-src > components > Footer.jsx
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-import React from 'react';
-import '../css/Footer.css';
+.footer {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: #ecf0f1;
+  padding: 3rem 0;
+  font-family: 'Poppins', sans-serif;
+}
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-        </div>
-      </div>
-    </footer>
-  );
-};
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+}
 
-export default Footer;
+.footer-content p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #ecf0f1;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  background: #3498db;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

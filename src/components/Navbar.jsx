@@ -18,7 +18,7 @@ const Navbar = () => {
         
         {/* Hamburger Menu Icon */}
         <button 
-          className={hamburger ${isMenuOpen ? 'active' : ''}} 
+          className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
           onClick={toggleMenu}
           aria-label="Menu"
         >
@@ -28,7 +28,7 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Menu */}
-        <div className={nav-menu ${isMenuOpen ? 'active' : ''}}>
+        <div className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setIsMenuOpen(false)}>Home</Link>
           <Link to="/about" className="nav-link" onClick={() => setIsMenuOpen(false)}>About</Link>
           <Link to="/projects" className="nav-link" onClick={() => setIsMenuOpen(false)}>Projects</Link>
